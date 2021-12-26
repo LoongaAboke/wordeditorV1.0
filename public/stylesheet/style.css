@@ -1,0 +1,273 @@
+
+body{
+  background: white;
+  margin: 0px; 
+  color: black;
+  top: 0px;
+  overflow-x: hidden;
+
+}
+
+#document{
+height: 100%;
+width: 100%;
+resize: none;
+border: none;
+outline: none;
+word-wrap: break-word;
+top: 70px;
+text-align: justify;
+padding: 0px;
+
+}
+.section1{
+ height: 1000px;
+ width: 800px;
+ margin: auto;
+ position: absolute;
+ left: 25%;
+  padding: 50px;
+   box-shadow: 0px 0px 20px #cccccc;
+}
+
+.section2{
+  height: 100%;
+  width: 280px; 
+  background: white;
+  position: fixed;
+  left: 0px;
+   top: 40px;
+  text-align: center;
+  border-right: 0.20px solid black;
+  z-index: 5;
+  transition-duration: 500ms;
+  display: flex;
+	max-width: 280px;
+	min-width:170px;
+	overflow: hidden;
+
+}
+.save{
+  height: 30px;
+  width: 50px;
+  color: black;
+  border: none;
+  background: white;
+}
+.download_btn{
+  height: 30px;
+  width: 80px;
+  color: black;
+  border: none;
+  background: white;
+}
+.more_btn{
+  height: 30px;
+  width: 80px;
+  color: black;
+  border: none;
+  background: white;
+  outline: none;
+}
+.main-btn-section{
+height: auto;
+width: auto;
+background: gray; 
+
+}
+
+
+.more_btn:hover{
+border-bottom: 1px solid black;
+}
+.download_btn:hover{
+border-bottom: 1px solid black;
+}
+.save:hover{
+  border-bottom: 1px solid black;
+}
+
+.grad_bar{
+  height: 5px;
+  width: 100%;
+  background-image: linear-gradient(to right, blue, lightblue); 
+  position: absolute;
+  top: 40px;
+  right: 6px;
+  border-radius: 2px;
+ 
+}
+.loading_holder{
+  background: white;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: 425px;
+  right: 90px;
+  border-radius: 50%; 
+  animation: loading 1s infinite;
+}
+.loader_background{
+  height: 30px;
+  width: 30px;
+ background: none;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  border-radius: 50%;
+  border: 3px solid rgb(28, 81, 253);
+  transform-origin: center;
+  
+}
+.inner_load{
+  background: white;
+  height: 10px;
+  width: 20px;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  border: none;
+}
+@keyframes loading{
+  100%{
+    transform:rotate(360deg);
+  }
+}
+
+
+.view{
+  height: 30px;
+  width: 50px;
+  position: absolute;
+}
+#DOC_NAME{
+  height: 20px;
+  width: 200px;
+  position: absolute;
+  left: 20px;
+  top: 10%; 
+  border-radius: 0px;
+  border:none;
+  padding-left: 5px;
+font-size: 18px;
+color: black;
+}
+
+
+
+.Main_table{
+  height: auto;
+  width: 100%;
+  position: absolute;
+  top: 20%;
+  background: white;
+  border: none; 
+}
+.fontSize{
+  position: absolute; 
+  top: 20%;
+  width: 100px;
+  height: 30px;
+  left: 20px;
+}
+.fontColor{
+  width: 100px;
+  height: 120px;
+  border-block-end: none;
+  border-radius: 50%;
+  position: absolute;
+   left: -20px;
+   top: -20px;
+  outline-color: blue;
+  cursor: pointer;
+}
+
+button:active{
+  border: 0.20px solid black; 
+}
+
+
+#mydiv {
+  position: absolute;
+  z-index: 9;
+  background: none;
+  border: none; 
+  outline: none;
+  text-align: center;
+  right: 4px;
+    top: 40%;
+
+
+}
+
+#mydivheader {
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+  background-color: white;
+  color: #fff;
+  border-radius: 5px;
+  border: 0.20px solid black;
+     height: 200px;
+  width: 250px;
+	display: none;
+  
+}
+
+.open{
+  height: 100%;
+  width: 10px;
+  background: black;
+  left: 290px;
+  top: 0px;
+  position: absolute;
+	cursor: move;
+}
+
+
+.underBlock{
+	height: 100px;
+}
+
+
+
+/* BEfore screens */
+.LHolder01{
+	position: fixed;
+	z-index: 500;
+	width: 100%;
+	height: 100%;
+	background: white;
+	margin: 0;
+	align-items: center;
+	justify-items: center;
+	align-content: center;
+	}
+	.LHLogo01{
+		height: 150px;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+	}
+		.LHLogo02{
+		height: 40px;
+		position: absolute;
+		image-rendering: pixelated;
+	}
+
+	.AppName{
+		width: 100%;
+		height: 40px;
+		background: #1f1f1f;
+		position: fixed;
+		z-index: 12;
+	}
+
+	.AppBlock{
+		width: 100%;
+		height: 110px;
+		background: linear-gradient(to top, rgb(68, 185, 240), rgb(60, 206, 255));
+		border-bottom: 0.20px double black;
+	}
