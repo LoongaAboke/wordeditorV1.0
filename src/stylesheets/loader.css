@@ -1,0 +1,57 @@
+
+body{
+  background: white;
+  margin: 0px; 
+}
+
+
+.loading_holder{
+  right: 0px;
+  background: none;
+  height: 100px;
+   width: 100px;
+  position: absolute;
+  transform-origin: center;
+  border-radius: 50%; 
+  animation: loading 1s infinite;
+  z-index: 5;
+  border: 1px solid black;
+
+}
+
+
+
+
+
+.loader_background{
+  height: 30px;
+  width: 30px;
+  background: black;
+  border-radius: 50%;
+  border: 3px solid rgb(28, 81, 253);
+  transform-origin: center;
+  
+}
+.inner_load{
+  background: rgb(226, 25, 25);
+  height: 10px;
+  width: 20px;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  border: none;
+   
+}
+@keyframes loading{
+  100%{
+    transform:rotate(180deg);
+  }
+}
+
+
+/* .view{
+  height: 30px;
+  width: 50px;
+  position: absolute;
+}
+ */
